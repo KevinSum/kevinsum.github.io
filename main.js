@@ -361,7 +361,7 @@ var mainState = {
         if (button_boolean == 1){
             button_duration = button_duration + 1;
         }
-        if (button_duration == 10){
+        if (button_duration == 15){
             button_boolean = 0;
             button_duration = 0;
         } 
