@@ -152,13 +152,13 @@ var mainState = {
         this.message5title.anchor.setTo(0.5, 0);
         this.message5sub = game.add.text(this.game.width/2 - 450, 70, "Basketball\n\n\n\n\nMusic Production", subheading2);
         this.message5sub.anchor.setTo(0.5, 0);
-        this.message5 = game.add.text(this.game.width/2, 130, "Avid basketball player. Am the vice-captain for the Vanbrugh College\nBasketball team at the University of York, where I have to help organise and run\ntraining sessions as well as lead the team in the inter-collegiate\nbasketball league games. Can't dunk (yet)\n\n\nKnowledgeable in music production and the process involved in producing a\ntrack. Examples of hobby-work can be seen at \nwww.youtube.com/user/KNJcovers where I do covers of anime and\nvideo game music in my spare time.", content)
+        this.message5 = game.add.text(this.game.width/2, 130, "Avid basketball player. Am the vice-captain for the Vanbrugh College\nBasketball team at the University of York, where I have to help organise and run\ntraining sessions as well as lead the team in the inter-collegiate basketball\nleague games. Can't dunk (yet)\n\n\nKnowledgeable in music production and the process involved in producing a\ntrack. Regularly post covers of anime and video game music on youtube in\nmy free time.", content)
         this.message5.anchor.setTo(0.5, 0);
-        this.message6 = game.add.text(this.game.width/2, height/2 - 200, "Contact\n\nEmail - kkss501@york.ac.uk\nPhone number - +44 7528 671147", title)
+        this.message6 = game.add.text(this.game.width/2, height/2 - 200, "Contact\n\nEmail: kkss501@york.ac.uk\nPhone number: +44 7528 671147", title)
         this.message6.anchor.setTo(0.5, 0);
         
-        this.message5.addColor('#0D46C1', 372);
-        this.message5.addColor('#000000', 404);
+        //this.message5.addColor('#0D46C1', 372);
+        //this.message5.addColor('#000000', 404);
 
         pop.play();
     },
