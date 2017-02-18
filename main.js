@@ -133,7 +133,7 @@ var mainState = {
         this.message2uni.anchor.setTo(0.5, 0);
         this.message2kes = game.add.text(this.game.width/2, 350, "King Edward's School (2008-2015)", subheading);
         this.message2kes.anchor.setTo(0.5, 0);
-        this.message2message = game.add.text(this.game.width/2, 130, "Meng Electronic Engineering with Music Technology Systems\n    Averaged 2:2 in first year(58%)\n    Modules include - Maths and programming, Electronic Hardware and Systems,\n    Analogue and Digital Electronics, Signals and Systems and \n    Recording studio Techniques\n\n\nInternational Baccalaureate\n    31 points - HL physics - 5, HL Chesmitry - 5, HL Maths - 4\n\nIGCSE - 6 A*, 1 A, 4 Bs", content);
+        this.message2message = game.add.text(this.game.width/2, 130, "Meng Electronic Engineering with Music Technology Systems\n    Currently averaging a first (74%)\n    Modules include - Maths and programming, Electronic Hardware and Systems,\n    Analogue and Digital Electronics, Signals and Systems and \n    Recording studio Techniques\n\n\nInternational Baccalaureate\n    31 points - HL physics - 5, HL Chesmitry - 5, HL Maths - 4\n\nIGCSE - 6 A*, 1 A, 4 Bs", content);
         this.message2message.anchor.setTo(0.5, 0);
         
         this.message3title = game.add.text(this.game.width/2, 5, "Work Experience\n\n2013", title);
@@ -145,7 +145,7 @@ var mainState = {
         this.message4title.anchor.setTo(0.5, 0);
         this.message4sub = game.add.text(this.game.width/2 - 450, 70, "Programming\n\n\nElectronics\n\n\n\nDriving", subheading2);
         this.message4sub.anchor.setTo(0.5, 0);
-        this.message4 = game.add.text(this.game.width/2, 130, "C    Java    Javascript    HTML    Visual Basic\n\n\n\nKnowledgeable in circuit theory/building/analysis and logic design\nAble to design logic on Xilenx ISE\n\n\n\nCar included", content)
+        this.message4 = game.add.text(this.game.width/2, 130, "C    Java    Javascript    HTML    Visual Basic\n\n\n\nKnowledgeable in circuit theory/building/analysis and logic design\nAble to design logic in VHDL\n\n\n\nCar included", content)
         this.message4.anchor.setTo(0.5, 0);
         
         this.message5title = game.add.text(this.game.width/2, 5, "Hobbies", title);
