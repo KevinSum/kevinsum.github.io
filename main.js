@@ -133,7 +133,7 @@ var mainState = {
         this.message2uni.anchor.setTo(0.5, 0);
         this.message2kes = game.add.text(this.game.width/2, 350, "King Edward's School (2008-2015)", subheading);
         this.message2kes.anchor.setTo(0.5, 0);
-        this.message2message = game.add.text(this.game.width/2, 130, "Meng Electronic Engineering with Music Technology Systems\n    Currently averaging a first (74%)\n    Modules include - Maths and programming, Electronic Hardware and Systems,\n    Analogue and Digital Electronics, Signals and Systems and \n    Recording studio Techniques\n\n\nInternational Baccalaureate\n    31 points - HL physics - 5, HL Chesmitry - 5, HL Maths - 4\n\nIGCSE - 6 A*, 1 A, 4 Bs", content);
+        this.message2message = game.add.text(this.game.width/2, 130, "Meng Electronic Engineering with Music Technology Systems\n    Currently averaging a first in 2nd year (74%)\n    Modules include - Maths and programming, Electronic Hardware and Systems,\n    Analogue and Digital Electronics, Signals and Systems and \n    Recording studio Techniques\n\n\nInternational Baccalaureate\n    31 points - HL physics - 5, HL Chesmitry - 5, HL Maths - 4\n\nIGCSE - 6 A*, 1 A, 4 Bs", content);
         this.message2message.anchor.setTo(0.5, 0);
         
         this.message3title = game.add.text(this.game.width/2, 5, "Work Experience\n\n2013", title);
