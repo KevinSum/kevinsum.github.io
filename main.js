@@ -77,6 +77,10 @@ var mainState = {
             
         // Create pop sound
         pop = game.add.audio('pop');
+        
+        // For youtube link
+        this.button = game.add.button(game.world.centerX - 405, game.world.centerY - 120, 'invisible', function () { window.open("https://github.com/KevinSum/Plugins", "_blank");}, this);
+        this.button.scale.setTo(7.6, 1.1);
 
         // Create text slide pngs
         this.slide_1 = game.add.sprite(width / 2, textVerticalShift, "slide_1");
@@ -111,20 +115,17 @@ var mainState = {
         group1.add(this.slide_6);
 
         // Create the player in the middle of the game
-        this.player = game.add.sprite(width / 2, height - 170, 'stickman');
-        this.player.scale.setTo(textScale);
+        this.player = game.add.sprite(width/2, height - 170 , 'stickman');
         this.player.anchor.setTo(0.5);
         group2.add(this.player);
         
         // Create basketball
         this.basketball = game.add.sprite(this.player.position.x, this.player.position.y, 'basketball');
         this.basketball.anchor.setTo(0.5);
-        this.basketball.scale.setTo(textScale);
         
         // Create computer
         this.computer = game.add.sprite(950, height - 100, 'computer');
         this.computer.anchor.setTo(0.5);
-        this.computer.scale.setTo(textScale);
         group1.add(this.computer)
         this.computer.frame = 1;
         
@@ -197,6 +198,7 @@ var mainState = {
         }
         if (slide == 4) {
             this.slide_4.visible = true;
+            this.button.visible = true; //Makes youtube link work
             this.computer.visible = true;
             if (computer_boolean == 0) {
                 this.computer.position.x = this.player.position.x + 120; // Place computer
@@ -279,9 +281,9 @@ var mainState = {
         if (slide == 5){
             this.basketball.visible = true;
             if (facing == 1){ // move ball so that it pops into the other hand when player turns
-                this.basketball.position.x = this.player.position.x ;
+                this.basketball.position.x = this.player.position.x - 35;
             }else{
-                this.basketball.position.x = this.player.position.x ;
+                this.basketball.position.x = this.player.position.x + 35;
             }
             if (this.player.body.touching.down){
                 this.basketball.position.y = this.player.position.y + 60 + basketball_dribble_distance;
