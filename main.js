@@ -20,7 +20,6 @@ var basketball_velocity = 4; // velocity of ball
 // Var to store slide number
 var slide = 1;
 
-<<<<<<< HEAD
 // Var to store text scale. Will be changed
 var textScale = 1;
 
@@ -29,8 +28,6 @@ var textVerticalShift = 30;
 
 
 
-=======
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
 // Create the state that will contain the whole game
 var mainState = {  
     preload: function() {  
@@ -45,7 +42,6 @@ var mainState = {
         game.load.image('ground', 'assets/ground.png');
         game.load.image('invisible', 'assets/invisible.png');
         game.load.audio('pop', 'assets/pop.wav');
-<<<<<<< HEAD
 
         game.load.image('slide_1', 'assets/slide_1.png');
         game.load.image('slide_2', 'assets/slide_2.png');
@@ -53,8 +49,6 @@ var mainState = {
         game.load.image('slide_4', 'assets/slide_4.png');
         game.load.image('slide_5', 'assets/slide_5.png');
         game.load.image('slide_6', 'assets/slide_6.png');
-=======
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
     },
     create: function() {  
         // Create game
@@ -83,11 +77,6 @@ var mainState = {
             
         // Create pop sound
         pop = game.add.audio('pop');
-        
-        // For youtube link
-<<<<<<< HEAD
-        this.button = game.add.button(game.world.centerX - 405, game.world.centerY - 120, 'invisible', function () { window.open("https://github.com/KevinSum/Plugins", "_blank");}, this);
-        this.button.scale.setTo(7.6, 1.1);
 
         // Create text slide pngs
         this.slide_1 = game.add.sprite(width / 2, textVerticalShift, "slide_1");
@@ -120,24 +109,22 @@ var mainState = {
         this.slide_6.anchor.setTo(0.5, 0.5);
         this.slide_6.scale.setTo(textScale, textScale);
         group1.add(this.slide_6);
-=======
-        this.button = game.add.button(game.world.centerX - 620, 460, 'invisible', function(){ window.open("http://www.youtube.com/user/KNJcovers", "_blank");}, this);
-        this.button.scale.setTo(14.5, 1.1);
-
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
 
         // Create the player in the middle of the game
-        this.player = game.add.sprite(width/2, height - 170 , 'stickman');
+        this.player = game.add.sprite(width / 2, height - 170, 'stickman');
+        this.player.scale.setTo(textScale);
         this.player.anchor.setTo(0.5);
         group2.add(this.player);
         
         // Create basketball
         this.basketball = game.add.sprite(this.player.position.x, this.player.position.y, 'basketball');
         this.basketball.anchor.setTo(0.5);
+        this.basketball.scale.setTo(textScale);
         
         // Create computer
         this.computer = game.add.sprite(950, height - 100, 'computer');
         this.computer.anchor.setTo(0.5);
+        this.computer.scale.setTo(textScale);
         group1.add(this.computer)
         this.computer.frame = 1;
         
@@ -152,10 +139,6 @@ var mainState = {
         this.player.animations.add('hatLeft', [9, 8], 4, true);
         this.player.animations.add('wrenchRight', [5, 4], 4, true);
         this.player.animations.add('wrenchLeft', [11, 10], 4, true);
-<<<<<<< HEAD
-=======
-        
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
 
         // Add gravity to make it fall
         this.player.body.gravity.y = 600;
@@ -183,46 +166,6 @@ var mainState = {
         var content = { font: "32px Century Gothic", fill: "#000000", align: "left"};
         content.stroke = '#ffffff';
         content.strokeThickness = 1;
-<<<<<<< HEAD
-=======
-        
-        // Messages
-        this.message1 = game.add.text(this.game.width/2, 50, "Kevin Sum\n\nInteractive CV\nUse arrow keys to move\n\n'x' to move to next slide\n\n'z' to move to previous slide", title);
-        this.message1.anchor.setTo(0.5, 0);
-        
-        this.message2title = game.add.text(this.game.width/2, 5, "Education", title);
-        this.message2title.anchor.setTo(0.5, 0);
-        this.message2uni = game.add.text(this.game.width/2, 70, "Currently undertaking - University of York (2015-2020)", subheading);
-        this.message2uni.anchor.setTo(0.5, 0);
-        this.message2kes = game.add.text(this.game.width/2, 350, "King Edward's School (2008-2015)", subheading);
-        this.message2kes.anchor.setTo(0.5, 0);
-        this.message2message = game.add.text(this.game.width/2, 130, "Meng Electronic Engineering with Music Technology Systems\n    Currently averaging a first in 2nd year (74%)\n    Modules include - Maths and programming, Electronic Hardware and Systems,\n    Analogue and Digital Electronics, Signals and Systems and \n    Recording studio Techniques\n\n\nInternational Baccalaureate\n    31 points - HL physics - 5, HL Chesmitry - 5, HL Maths - 4\n\nIGCSE - 6 A*, 1 A, 4 Bs", content);
-        this.message2message.anchor.setTo(0.5, 0);
-        
-        this.message3title = game.add.text(this.game.width/2, 5, "Work Experience\n\n2013", title);
-        this.message3title.anchor.setTo(0.5, 0);
-        this.message3 = game.add.text(this.game.width/2, 200, "Jaguar Land Rover - Vehicle Safety Department\n     Assisted in setting up vehicle testing rigs, such as for stress tests and\n     airbag tests\n\nAero Engine Controls - Electronics (1 week)\n     Work shadowing, as well as several soldering jobs ", content)
-        this.message3.anchor.setTo(0.5, 0);
-        
-        this.message4title = game.add.text(this.game.width/2, 5, "Skills", title);
-        this.message4title.anchor.setTo(0.5, 0);
-        this.message4sub = game.add.text(this.game.width/2 - 450, 70, "Programming\n\n\nElectronics\n\n\n\nDriving", subheading2);
-        this.message4sub.anchor.setTo(0.5, 0);
-        this.message4 = game.add.text(this.game.width/2, 130, "C    Java    Javascript    HTML    Visual Basic\n\n\n\nKnowledgeable in circuit theory/building/analysis and logic design\nAble to design logic in VHDL\n\n\n\nCar included", content)
-        this.message4.anchor.setTo(0.5, 0);
-        
-        this.message5title = game.add.text(this.game.width/2, 5, "Hobbies", title);
-        this.message5title.anchor.setTo(0.5, 0);
-        this.message5sub = game.add.text(this.game.width/2 - 450, 70, "Basketball\n\n\n\n\nMusic Production", subheading2);
-        this.message5sub.anchor.setTo(0.5, 0);
-        this.message5 = game.add.text(this.game.width/2, 130, "Avid basketball player. Am the vice-captain for the Vanbrugh College\nBasketball team at the University of York, where I have to help organise and run\ntraining sessions as well as lead the team in the inter-collegiate basketball\nleague games. Can't dunk (yet)\n\n\nKnowledgeable in music production and the process involved in producing a\ntrack. Regularly post covers of anime and video game music on youtube in\nmy free time.", content)
-        this.message5.anchor.setTo(0.5, 0);
-        this.message6 = game.add.text(this.game.width/2, height/2 - 200, "Contact\n\nEmail: kkss501@york.ac.uk\nPhone number: +44 7528 671147", title)
-        this.message6.anchor.setTo(0.5, 0);
-        
-        //this.message5.addColor('#0D46C1', 372);
-        //this.message5.addColor('#000000', 404);
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
 
         pop.play();
     },
@@ -230,7 +173,6 @@ var mainState = {
     
     
     update: function() {  
-<<<<<<< HEAD
         // Here we update the game 60 times per second
 
         // Make messages invisible
@@ -255,7 +197,6 @@ var mainState = {
         }
         if (slide == 4) {
             this.slide_4.visible = true;
-            this.button.visible = true; //Makes youtube link work
             this.computer.visible = true;
             if (computer_boolean == 0) {
                 this.computer.position.x = this.player.position.x + 120; // Place computer
@@ -271,9 +212,6 @@ var mainState = {
         if (slide == 6) {
             this.slide_6.visible = true;
         }
-=======
-        // Here we update the game 60 times per secon
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
         
         // Move the player when an arrow key is pressed
         if (this.cursor.left.isDown && this.player.position.x > 0) {
@@ -341,9 +279,9 @@ var mainState = {
         if (slide == 5){
             this.basketball.visible = true;
             if (facing == 1){ // move ball so that it pops into the other hand when player turns
-                this.basketball.position.x = this.player.position.x - 35;
+                this.basketball.position.x = this.player.position.x ;
             }else{
-                this.basketball.position.x = this.player.position.x + 35;
+                this.basketball.position.x = this.player.position.x ;
             }
             if (this.player.body.touching.down){
                 this.basketball.position.y = this.player.position.y + 60 + basketball_dribble_distance;
@@ -401,62 +339,6 @@ var mainState = {
             button_boolean = 1;
         } 
         
-<<<<<<< HEAD
-=======
-        // Make messages invisible
-        this.button.visible = false;
-        this.message1.visible = false;
-        this.message2title.visible = false;
-        this.message2uni.visible = false;
-        this.message2kes.visible = false;
-        this.message2message.visible = false;
-        this.message3.visible = false;
-        this.message3title.visible = false;
-        this.message4title.visible = false;
-        this.message4sub.visible = false;
-        this.message4.visible = false;
-        this.message5title.visible = false;
-        this.message5sub.visible = false;
-        this.message5.visible = false;
-        this.message6.visible = false;
-        //Make messages visible for respective text
-        if (slide == 1){
-            this.message1.visible = true;
-        }
-        if (slide == 2){
-            this.message2title.visible = true;
-            this.message2uni.visible = true;
-            this.message2kes.visible = true;
-            this.message2message.visible = true;
-        }
-        if (slide == 3){
-            this.message3title.visible = true;
-            this.message3.visible = true;
-        }
-        if (slide == 4){
-            this.message4title.visible = true;
-            this.message4sub.visible = true;
-            this.message4.visible = true;
-            this.computer.visible = true;
-            if(computer_boolean == 0){
-                this.computer.position.x = this.player.position.x + 120; // Place button
-                computer_boolean = 1;
-            }
-        }else{
-            this.computer.visible = false;
-            computer_boolean = 0;
-        }
-        if (slide == 5){
-            this.button.visible = true; //Makes youtube link work
-            this.message5.visible = true;
-            this.message5title.visible = true;
-            this.message5sub.visible = true;
-        }
-        if (slide == 6){
-            this.message6.visible = true;
-        }
-        
->>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
         // Timer for how long emit_sprite is visible
         if (emit_boolean == 1){
             emit_duration = emit_duration + 1;
