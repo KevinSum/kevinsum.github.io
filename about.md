@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+<<<<<<< HEAD
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
@@ -16,3 +17,14 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+=======
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+
+You can find the source code for the Jekyll new theme at:
+{% include icon-github.html username="jekyll" %} /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at
+{% include icon-github.html username="jekyll" %} /
+[jekyll](https://github.com/jekyll/jekyll)
+>>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025

@@ -2,7 +2,11 @@
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
+<<<<<<< HEAD
 # yourself editing this file very often, consider using Jekyll's data files
+=======
+# yourself editing these this file very often, consider using Jekyll's data files
+>>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -14,8 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
+<<<<<<< HEAD
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
+=======
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+>>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -27,6 +36,7 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 theme: minima
+<<<<<<< HEAD
 plugins:
   - jekyll-feed
 
@@ -41,3 +51,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+=======
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+>>>>>>> 48c13fccefe02a564f86bb03cafa0c0be1d25025
