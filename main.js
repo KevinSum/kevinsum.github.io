@@ -90,23 +90,27 @@ var mainState = {
         group1.add(this.slide_1);
 
         this.slide_2 = game.add.sprite(width / 2, textVerticalShift, "slide_2");
+        textScale2 = (width / this.slide_2.width) - (width / this.slide_2.width) / 20;
         this.slide_2.anchor.setTo(0.5, 0);
-        this.slide_2.scale.setTo(textScale, textScale);
+        this.slide_2.scale.setTo(textScale2, textScale2);
         group1.add(this.slide_2);
 
         this.slide_3 = game.add.sprite(width / 2, textVerticalShift, "slide_3");
+        textScale3 = (width / this.slide_3.width) - (width / this.slide_3.width) / 20;
         this.slide_3.anchor.setTo(0.5, 0);
-        this.slide_3.scale.setTo(textScale, textScale);
+        this.slide_3.scale.setTo(textScale3, textScale3);
         group1.add(this.slide_3);
 
         this.slide_4 = game.add.sprite(width / 2, textVerticalShift, "slide_4");
+        textScale4 = (width / this.slide_4.width) - (width / this.slide_4.width) / 20;
         this.slide_4.anchor.setTo(0.5, 0);
-        this.slide_4.scale.setTo(textScale, textScale);
+        this.slide_4.scale.setTo(textScale4, textScale4);
         group1.add(this.slide_4);
 
         this.slide_5 = game.add.sprite(width / 2, textVerticalShift, "slide_5");
+        textScale5 = (width / this.slide_5.width) - (width / this.slide_5.width) / 20;
         this.slide_5.anchor.setTo(0.5, 0);
-        this.slide_5.scale.setTo(textScale, textScale);
+        this.slide_5.scale.setTo(textScale5, textScale5);
         group1.add(this.slide_5);
 
         this.slide_6 = game.add.sprite(width / 2, height/2 - 100, "slide_6");
