@@ -84,7 +84,7 @@ var mainState = {
 
         // Create text slide pngs
         this.slide_1 = game.add.sprite(width / 2, textVerticalShift, "slide_1");
-        textScale = (width / this.slide_1.width) - (width / this.slide_1.width)/20; // Set scale of text
+        textScale = (width / this.slide_2.width) - (width / this.slide_2.width)/20; // Set scale of text
         this.slide_1.anchor.setTo(0.5, 0);
         this.slide_1.scale.setTo(textScale, textScale);
         group1.add(this.slide_1);
